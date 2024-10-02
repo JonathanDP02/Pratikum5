@@ -9,19 +9,19 @@ public class PemilihanHari07 {
 
         String dayName, dayType;
 
-        System.out.print("Input day name: ");
+        System.out.print("Input number 1 to 7: ");
         dayName = sc.nextLine();
 
         switch (dayName.toLowerCase()) {
-            case "monday":
-            case "tuesday":
-            case "wednesday":
-            case "thursday":
-            case "friday":
+            case "1":
+            case "2":
+            case "3":
+            case "4":
+            case "5":
                 dayType = "weekday";
                 break;
-            case "saturday":
-            case "sunday":
+            case "6":
+            case "7":
                 dayType = "weekend";
                 break;
             default:
