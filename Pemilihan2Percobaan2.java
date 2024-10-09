@@ -6,9 +6,9 @@ public class Pemilihan2Percobaan2 {
     
     //...................deklarasi.......................//
 
-    int pilihMenu, harga;
-    String member;
-    double diskon = 0.10;
+    int pilihMenu, harga, potongan = 1000;
+    String member,jenisBayar;
+    double diskon = 0.10, total = 0, totalBayar = 0;
 
     System.out.println("-----------------------------------");
     System.out.println("========== MENU KAFE JTI ==========");
@@ -43,7 +43,7 @@ public class Pemilihan2Percobaan2 {
         
         //...............perhitungan................//
 
-        double total = harga - (harga*diskon);
+        total = harga - (harga*diskon);
         System.out.println("Total bayar setelah diskon = " + total);
     }
     //...................kondisi2.......................//
@@ -64,13 +64,30 @@ public class Pemilihan2Percobaan2 {
         }
     //..................perhitungan....................//
 
-    System.out.println("Total bayar = " + harga);
+    total = harga = 0;
+    System.out.println("Total bayar = " + total);
 
     }else{
         System.out.println("Member tidak valid");
     }
 
     System.out.println("------------------------------");
+
+    //................jenis-pembayaran...............//
+
+    System.out.print("Bayar menggunakan Qris (y/n) ? = ");
+    jenisBayar = input07.nextLine();
+
+    if (jenisBayar.equalsIgnoreCase("y")) {
+        System.out.println("Potongan harga sebesar = 1000");
+        totalBayar = total - potongan;
+        System.out.println("Total yang harus dibayarkan = " + totalBayar);
+    }
     
+    else if (jenisBayar.equalsIgnoreCase("n")) {
+        System.out.println("Total yang harus dibayarkan = " + total);
+    }else{
+        System.out.println("!!!INPUT TIDAK VALIT!!!");
+    }
     }
 }
