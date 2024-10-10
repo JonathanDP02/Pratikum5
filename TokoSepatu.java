@@ -2,8 +2,13 @@ import java.util.Scanner;
 
 public class TokoSepatu {
     public static void main(String[] args) {
+
+        //...................Deklarasi.....................//
+
         String  merk = "nike", kategori = "adult";
         int ukuran = 44;
+        
+        //..................switch-case....................//
         
         if (merk.equals("converse")) {
             if (kategori.equals("slipon")) {

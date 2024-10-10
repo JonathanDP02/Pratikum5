@@ -18,12 +18,12 @@ public class Pemilihan2Percobaan107 {
                 System.out.println("Tahun kabisat");
             }else{
                 if ((tahun % 400) == 0) 
-                System.out.println("Tahun kabinet");
+                System.out.println("Tahun kabisat");
                 else
-                System.out.println("Bukan tahun kabinet");
+                System.out.println("Bukan tahun kabisat");
             }
         } else {
-            System.out.println("Bukan tahun kabinet");
+            System.out.println("Bukan tahun kabisat");
         }
     }
 }

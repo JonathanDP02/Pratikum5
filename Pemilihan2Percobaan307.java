@@ -23,11 +23,23 @@ public class Pemilihan2Percobaan307 {
                 pajak = 0.1;
             else if (penghasilan <= 3000000)
                 pajak = 0.15;
-            else
+            else 
                 pajak = 0.2;
         gajiBersih = (int) (penghasilan - (pajak*penghasilan));
         System.out.print("Penghasilan Bersih : " + gajiBersih);
-        } else 
+        } 
+        else if (kategori.equals("pebisnis")) {
+            if (penghasilan <= 2000000) 
+                pajak = 0.1;
+            else if (penghasilan <= 3000000)
+                pajak = 0.15;
+            else 
+                pajak = 0.2;
+        gajiBersih = (int) (penghasilan - (pajak*penghasilan));
+        System.out.print("Penghasilan Bersih : " + gajiBersih);
+        }
+        
+        else 
             System.out.println("Masukan Kategori salah ");
     }
 }
